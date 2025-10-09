@@ -3,9 +3,13 @@ What is AWS?
 Amazon Web Services (AWS) is a cloud computing platform provided by Amazon. It offers a wide range of cloud-based services such as:
 
 ==> Compute power (e.g., EC2)
+
 ==> Storage (e.g., S3)
+
 ==> Databases (e.g., RDS, DynamoDB)
+
 ==> Networking (e.g., VPC, Route 53)
+
 ==> Machine Learning, IoT, DevOps tools, and much more
 
 AWS allows individuals, startups, and enterprises to build and scale applications without having to manage physical servers or data centers.
@@ -39,4 +43,5 @@ From serverless computing to AI/ML and DevOps, AWS offers 200+ services to meet 
 7. Fast Deployment
 
 You can spin up virtual servers, databases or whole environments in minutes not days or weeks.
+
 

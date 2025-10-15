@@ -22,6 +22,7 @@ Permissions in a group are determined by managed policies or inline policies tha
 ==> Simplifies User Management:
 
 Rather than assigning permissions to each individual user, you can assign permissions to groups.
+
 Any user added to the group will inherit the permissions associated with the group, making it easier to manage large numbers of users.
 
 ==> Types of Policies:

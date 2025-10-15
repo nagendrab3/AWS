@@ -1,10 +1,10 @@
-*IAM GROUPS*
+IAM GROUPS
 An IAM group is essentially a collection of IAM users. It allows you to manage multiple users at once, instead of assigning permissions individually.
 
-*Example*
+Example
 You might have a group called Admins and all users in this group will have administrative access to your AWS resources.
 
-*Key Concepts of IAM Groups*
+Key Concepts of IAM Groups
 
 ==> Group of IAM Users
 
@@ -32,13 +32,13 @@ Customer Managed Policies: Policies that you create to fine-tune permissions bas
 
 Inline Policies: Policies that are directly attached to a specific group or user (less commonly used).
 
-*How IAM Groups Work*
+How IAM Groups Work
 
 ==> Creating a Group
 
 You create a group in IAM and then assign a set of policies to it. These policies define the permissions that members of the group will have.
 
-*Example*
+Example
 
 A group named Developers might have permissions to manage EC2 instances and Lambda functions, but not delete or modify IAM roles.
 
@@ -54,7 +54,7 @@ Users in a group inherit all of the permissions that are granted to the group. I
 
 Example Use Cases:
 
-==>Suppose you have the following roles
+==> Suppose you have the following roles
 
 Admins: Full access to all AWS services.
 
@@ -70,7 +70,7 @@ Create a Developer group with specific permissions.
 
 Create a Read-Only group with view-only permissions.
 
-*Benefits of Using IAM Groups*
+Benefits of Using IAM Groups
 
 ==> Centralized Management:
 
@@ -84,8 +84,7 @@ Rather than modifying permissions for each user, you just modify the groups perm
 
 As your organization grows, IAM groups make it easier to manage access control across many users, ensuring that your security model is maintainable.
 
-
-*IAM Groups Creation*
+IAM Groups Creation
 
 Step 1: Open the IAM Console
 
@@ -117,7 +116,7 @@ After assigning the policies, click Next.
 
 Review the details and click Create group.
 
-*Add Users to the IAM Group*
+Add Users to the IAM Group
 
 ==> Add Users to the Group:
 

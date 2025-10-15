@@ -1,0 +1,98 @@
+*IAM GROUPS*
+An IAM group is essentially a collection of IAM users. It allows you to manage multiple users at once, instead of assigning permissions individually.
+
+*Example*
+You might have a group called Admins and all users in this group will have administrative access to your AWS resources.
+
+*Key Concepts of IAM Groups*
+
+==> Group of IAM Users
+
+An IAM group is essentially a collection of IAM users. It allows you to manage multiple users at once, instead of assigning permissions individually.
+
+Example: You might have a group called Admins and all users in this group will have administrative access to your AWS resources.
+
+==> Permissions and Policies:
+
+IAM policies are used to define what actions are allowed or denied in AWS.
+These policies are assigned to groups (or individual users) and the users in the group inherit those permissions.
+
+Permissions in a group are determined by managed policies or inline policies that are attached to the group.
+
+==> Simplifies User Management:
+
+Rather than assigning permissions to each individual user, you can assign permissions to groups.
+Any user added to the group will inherit the permissions associated with the group, making it easier to manage large numbers of users.
+
+==> Types of Policies:
+
+AWS Managed Policies: Predefined policies by AWS for common use cases (e.g., AdministratorAccess, ReadOnlyAccess).
+
+Customer Managed Policies: Policies that you create to fine-tune permissions based on specific use cases.
+
+Inline Policies: Policies that are directly attached to a specific group or user (less commonly used).
+
+*How IAM Groups Work*
+
+==> Creating a Group
+
+You create a group in IAM and then assign a set of policies to it. These policies define the permissions that members of the group will have.
+
+*Example*
+
+A group named Developers might have permissions to manage EC2 instances and Lambda functions, but not delete or modify IAM roles.
+
+A group named Admins might have full access to all AWS services and resources.
+
+==> Assigning Users to Groups
+
+After creating a group, you can add users to that group. Once users are added to the group, they will automatically inherit the permissions attached to that group.
+
+==> Policy Inheritance
+
+Users in a group inherit all of the permissions that are granted to the group. If a user is in multiple groups, they inherit the union of permissions from all those groups.
+
+Example Use Cases:
+
+==>Suppose you have the following roles
+
+Admins: Full access to all AWS services.
+
+Developers: Access to EC2, Lambda, and S3, but no access to IAM or billing.
+
+Read-Only: Can view resources but not modify them.
+
+==> Instead of assigning permissions to each individual user, you would
+
+Create an Admin group with full access.
+
+Create a Developer group with specific permissions.
+
+Create a Read-Only group with view-only permissions.
+
+*Benefits of Using IAM Groups*
+
+==> Centralized Management:
+
+Groups allow you to manage permissions for many users at once, reducing administrative overhead.
+
+==> Easier Permission Control
+
+Rather than modifying permissions for each user, you just modify the groups permissions and all users in that group will inherit those changes.
+
+==> Scalable Security
+
+As your organization grows, IAM groups make it easier to manage access control across many users, ensuring that your security model is maintainable.
+
+
+*IAM Groups Creation*
+
+Step 1: Open the IAM Console
+
+==> Sign in to the AWS Management Console.
+
+==> Navigate to Services > Security Identity & Compliance > IAM.
+
+==> In the left pane, select User groups.
+
+

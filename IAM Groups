@@ -95,6 +95,53 @@ Step 1: Open the IAM Console
 
 ==> In the left pane, select User groups.
 
+==> Click on the Create group button.
 
+==> In the Group name field, give your group a name (e.g., Admins, Developers, Viewers, etc.).
 
+==> Assign Permissions
+
+==> Under Attach permissions, you can either
+
+Choose Managed Policies: AWS provides predefined permissions (policies). For example, you can select policies like AdministratorAccess, AmazonEC2FullAccess, or ReadOnlyAccess.
+
+Create a Custom Policy: If you want more granular control, you can create your own custom policies or attach inline policies to the group.
+
+==> To select policies
+
+Type in the policy name (e.g., AdministratorAccess), and select the checkbox next to it.
+
+==> Review and Create
+
+After assigning the policies, click Next.
+
+Review the details and click Create group.
+
+*Add Users to the IAM Group*
+
+==> Add Users to the Group:
+
+After creating the group, you can add users to the group by selecting the group name under User groups.
+
+Click Add users.
+
+Select existing users (or create new users) that you want to add to this group.
+
+Click Add users to add them to the group.
+
+Attach Policies to IAM Group
+
+==> Attach Managed Policies:
+
+After creating a group, you can always go back to User groups in IAM.
+
+Select your group, and you can click on Permissions to attach new managed policies.
+
+==> Attach Inline Policies (optional):
+
+To create more customized permissions, you can create inline policies (policies that are directly attached to the group).
+
+Click on the Add inline policy button in the Permissions tab of the group.
+
+Use the policy editor to create custom policies based on the actions you need to allow or deny.
 

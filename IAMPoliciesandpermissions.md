@@ -45,5 +45,14 @@ What actions on
 Which resources
 
 
+**IAM Policies Defined**
+
+IAM policies manage access and permissions in AWS
+
+A policy defines the permisiions and actions for an identity or resource.
+
+Rukes that define what resources an entity can access and what operations they can perform.
+
+IAM policies provide fine-grained access control for resources and services.
 
 

@@ -9,7 +9,9 @@ Applying the Principle of Least Privilege granting only the access needed to per
 Grant users and roles only the permissions they require. In this example, Nagendra creates three groups:
 
 Admins (Devi and Akhila): full management rights across AWS services.
+
 Developers: access limited to a specific Sales folder.
+
 Test (Manoj and saleem): no access to the Sales folder
 
 
@@ -39,4 +41,5 @@ An IAM policy is a JSON document that defines:
 Who (user, group, role) can perform
 What actions on
 Which resources
+
 

@@ -1,4 +1,3 @@
-
 **IAM policies and permissions**
 
 IAM policies and permissions control who can perform which actions on which resources. 
@@ -44,6 +43,7 @@ Who (user, group, role) can perform
 What actions on
 
 Which resources
+
 
 
 

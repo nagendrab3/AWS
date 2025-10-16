@@ -55,4 +55,69 @@ Rukes that define what resources an entity can access and what operations they c
 
 IAM policies provide fine-grained access control for resources and services.
 
+==> Policy Types
+
+IAM policies fall into two primary categories:
+
+1. Identity-based policy:
+
+Users, groups, roles
+
+Grant permissions to IAM identities
+
+2. Resource-based policy
+
+AWS resources (e.g., S3, Lambda)
+
+Attach policies directly to resources themselves.
+
+
+You can attach an identity-based policy to a group of developers or assign a role to an EC2 instance so your applications inherit those permissions.
+
+==> Identity-based Policy Example
+
+Below is a sample JSON identity policy with two statements:
+
+{
+  "Version": "20XX-10-16",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::<bucket-name>"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances"
+      ],
+      "Resource": [
+        "arn:aws:ec2:<region>:<account-id>:instance/<instance-id>"
+      ]
+    }
+  ]
+}
+
+
+==> The first statement allows all S3 actions on a specific bucket.
+
+==> The second statement allows starting a particular EC2 instance.
+
+==> Example: Creating an Identity Policy
+
+Follow these steps in the AWS Management Console to create and attach an identity-based policy to a group:
+
+Sign in to the IAM console.
+
+Navigate to Policies > Create policy.
+
+Use the JSON editor to paste your policy document.
+
+Review and Create policy.
+
+Attach the new policy to your IAM group.
 
